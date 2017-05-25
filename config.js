@@ -1,5 +1,5 @@
 module.exports = {
-    // debug: true,
+    debug: true,
     receive_via_postback: false,
     verify_token: process.env.verify_token,
     access_token: process.env.page_token,
