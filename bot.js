@@ -35,16 +35,10 @@ if (!process.env.verify_token) {
 
 var Botkit = require('botkit');
 var debug = require('debug')('botkit:main');
+var config = require('./config');
 
 // Create the Botkit controller, which controls all instances of the bot.
-var controller = Botkit.facebookbot({
-    // debug: true,
-    receive_via_postback: false,
-    verify_token: process.env.verify_token,
-    access_token: process.env.page_token,
-    studio_token: process.env.studio_token,
-    studio_command_uri: process.env.studio_command_uri,
-});
+var controller = Botkit.facebookbot(config);
 
 // Set up an Express-powered webserver to expose oauth and webhook endpoints
 var webserver = require(__dirname + '/components/express_webserver.js')(controller);
