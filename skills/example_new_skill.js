@@ -1,6 +1,6 @@
 module.exports = function(controller) {
 
-    controller.hears(['recall'], 'message_received', function(bot, message) {
+    controller.hears(['ass'], 'message_received', function(bot, message) {
 
         bot.startConversation(message, function(err, convo) {
             convo.say('Did someone say ASS???');

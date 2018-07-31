@@ -7,13 +7,15 @@
     "start": "node bot.js"
   },
   "dependencies": {
-    "body-parser": "^1.15.2",
-    "botkit": "^0.5",
-    "dashbot": "^9.0.0",
-    "debug": "^2.6.0",
-    "express": "^4.14.0",
+    "body-parser": "^1.18.3",
+    "botkit": "^0.6.16",
+    "dashbot": "^9.9.2",
+    "debug": "^3.1.0",
+    "express": "^4.16.3",
+    "https": "^1.0.0",
+    "lodash": "^4.17.10",
     "node-env-file": "^0.1.8",
-    "request": "^2.79.0",
+    "request": "^2.87.0",
     "wordfilter": "^0.2.6"
   },
   "devDependencies": {},
